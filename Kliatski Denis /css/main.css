@@ -1,0 +1,163 @@
+ * {
+	 padding: 0;
+	 margin: 0;
+	 font-family:  Sans Unicode”, “Lucida Grande”, sans-serif;
+	 transition: all .1s ease-in;
+   -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+ }
+
+	body {
+	background: #3697C7 ;
+	border: 15px solid #2F7FA7 ;
+	height: 100vh;
+}
+
+.maincontent {
+	width: 50%;
+	margin: 50px auto;
+}
+
+/*
+*
+*TITLE
+*
+*/
+
+.Content__title {
+	color: white;
+	margin-bottom: 20px;	
+}
+
+.bottom__title {
+	color: white;
+	margin-top: 15px;
+	font-size: 16px
+}
+
+/*
+*
+*TITLE
+*
+*/
+
+.table {
+	width: 100%;
+	height: 100%;
+	border: 2px solid white;
+}
+
+	.table__list {
+	list-style: none;
+	font-size: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+
+	}
+
+	.gradus {
+		color: white;
+		margin-top: 10px;
+		opacity: 0.7;
+	}
+
+
+	.city-list {
+		color: white;
+		border: 2px solid white;
+		display: inline-block;
+		vertical-align: top;
+		padding: 15px 0;
+		font-size: 18px;
+		text-align: center;
+		width: 25%;
+	}
+
+	.wi {
+		display: block;
+		font-size: 20px;
+		color: white;
+		margin-left: 10px;
+	}
+
+/*
+*
+*STYLE
+*
+*/
+.table__list:hover .city-list {
+	opacity: 0.5;
+}
+	
+	.table__list:hover .city-list:hover {
+		opacity: 1;
+	}
+
+/*
+*
+*./STYLE
+*
+****************************
+*/
+
+/*
+*
+*СITY
+*
+*/
+.table__item-l {
+	width: 50%;
+	background: #3697C7;
+}
+
+.table__item-p {
+	background: #06D3CA;
+	
+}
+
+.table__item-b {
+	background: #9C5795;
+}
+
+.table__item-m {
+	background: #C5274C;
+}
+
+.table__item-ta {
+	background: #E55252;
+}
+
+.table__item-c {
+	background: #FECD73;
+}
+
+.table__item-ny {
+	background: #90D49B;
+}
+
+.table__item-nd {
+	background: #629B97;
+}
+
+.table__item-t {
+	background: #19A068;
+}
+
+.table__item-sf {
+	width: 50%;
+	background: #D04A96;
+}
+
+.table__item-s {
+	width: 100%;
+	background: #6A5E95;
+}
+/*
+*
+*./СITY
+*
+*/
+
+
