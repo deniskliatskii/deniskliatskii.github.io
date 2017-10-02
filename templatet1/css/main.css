@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all .3s ease-in-out;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background: white;
+}
+
+.conteiner,
+.conteiner__main,
+.conteiner__footer {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/**
+*
+* HEADER
+*
+**/
+.main-header {
+  width: 100%;
+  background: white;
+  box-shadow: 0 5px 8px rgba(255, 0, 119, 0.8);
+  font-size: 0;
+}
+
+  .main-header__column {
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+    vertical-align: middle;
+  }
+
+    /**
+    *
+    * LOGO
+    *
+    **/
+    .logo__link {
+      background: #FF0080;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      display: block;
+    }
+    /**
+    *
+    * ./LOGO
+    *
+    **/
+
+        /**
+        *
+        * NAVIGATION
+        *
+        **/
+        .nav__item {
+          display: inline-block;
+          
+        }
+
+        .nav__item:hover {
+          background: rgba(255, 0, 119, 0.8);
+        }
+        .nav__item:hover .nav__link {
+          color: white;
+        }
+        
+        .nav__list {
+          text-align: right;
+        }
+        .nav__link {
+          text-transform: uppercase;
+          display: block;
+          padding: 30px 15px;
+          color: #FF0080;
+        }
+        /**
+        *
+        * ./NAVIGATION
+        *
+        **/
+
+/**
+*
+* ./HEADER
+*
+**/
+.conteiner__main {
+  font-size: 0;
+  margin-top: 40px;
+}
+.menu__column {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  width: 20%;
+  border: 2px solid #FF0080;
+  border-radius: 10px;
+}
+.main__column {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  width: 70%;
+  border: 2px solid #FF0080;
+  border-radius: 10px;
+  margin-left: 5%;
+}
+
+/**
+*
+* ASIDE
+*
+**/
+  .menu__item {
+    
+  }
+  .menu__list {
+    padding: 15px;
+  }
+  .menu__link {
+    display: block;
+    padding: 10px 5px;
+    color: #FF0080;
+    text-transform: uppercase;
+  }
+  .menu__item:hover {
+    background: rgba(255, 0, 119, 0.8);
+    border-radius: 5px;
+  }
+  .menu__item:hover .menu__link {
+    color: white;
+  }
+
+/**
+*
+* ./ASIDE
+*
+**/
+
+/**
+*
+* MAIN CONTENT
+*
+**/
+  .news {
+      padding: 20px;
+  }
+    .news__title {
+      text-align: center;
+      padding: 10px;
+      color: #FF0080;
+    }
+    .news__card {
+      background: white;
+      border-bottom: 1px solid rgba(255, 0, 119, 0.8);
+    }
+      .img__wrap {
+        display: block;
+        width: 500px;
+        margin: 0 auto ;
+        padding: 20px;
+        border-radius: 30px;
+      }
+      p {
+        text-align: justify;
+        padding: 15px 30px;
+        color:rgba(0, 0, 0, .87);
+      }
+        .img__title {
+          text-align: center;
+          font-weight: 800;
+        }
+        /**
+        *
+        * NEWS FOOTER
+        *
+        **/
+        .footer-news {
+          font-size: 0;
+          padding: 10px; 
+          width: 80%;
+          margin: 0 auto;
+          border-bottom: 1px solid rgba(255, 0, 119, 0.8);
+        }
+        .date {
+          display: inline-block;
+          width: 80%;
+          font-size: 16px;
+          color: #FF0080;
+          font-weight: bold;
+        }
+        .ful-news {
+          display: inline-block;
+          width: 20%;
+          font-size: 16px;
+        }
+        .ful-news__link {
+          display: block;
+          padding: 10px 20px;
+          text-align: center;
+          color:#FF0080;
+          font-weight: bold;
+        }
+        .ful-news__link:hover {
+          background: rgba(255, 0, 119, 0.8);
+          color: white;
+          border-radius: 5px;
+        }
+        /**
+        *
+        * ./NEWS FOOTER
+        *
+        **/
+/**
+*
+* ./MAIN CONTENT
+*
+**/
+
+/**
+*
+* FOOTER
+*
+**/
+  .main__footer {
+    width: 100%;
+    background: white;
+    box-shadow: 0 -5px 8px rgba(255, 0, 119, 0.8);
+    margin-top: 40px;
+  }
+      .copy,.footer__nav,.social {
+        display: inline-block;
+        width: 25%;
+        padding: 15px;
+        vertical-align: middle;
+        margin-left: 20px;
+        
+      }
+      .footer__link,.social__link {
+        color: #FF0080;
+      }
+      .footer__item,.social__item {
+        padding: 5px;
+      }
+      .footer__item:hover .footer__link {
+        border-top: 2px solid #FF0080;
+        border-bottom: 2px solid #FF0080;
+      }
+      .social__item:hover .social__link {
+        border-top: 2px solid #FF0080;
+        border-bottom: 2px solid #FF0080;
+      }
+      .copy {
+        width: 35%;
+        color: #FF0080;
+        font-weight: bold;
+      }
+/**
+*
+* ./FOOTER
+*
+**/
