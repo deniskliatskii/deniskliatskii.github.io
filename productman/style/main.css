@@ -1,0 +1,651 @@
+
+/*-- adjustment settings
+============================*/
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+/* input settings */
+
+.input::-webkit-input-placeholder {
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 600i;
+	font-size: 1.125rem;
+	color: #979797;
+}
+.input:-moz-placeholder {
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 600i;
+	font-size: 1.125rem;
+	color: #979797;
+}
+.input::-moz-placeholder {
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 600i;
+	font-size: 1.125rem;
+	color: #979797;
+}
+.input:-ms-input-placeholder {
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 600i;
+	font-size: 1.125rem;
+	color: #979797;
+}
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	background: #eeeeee;
+}
+
+.maincontent {
+	flex-grow: 1;
+}
+
+.header {
+	padding-top: 45px; 
+}
+.container {
+	max-width: 1198px;
+	padding: 0 15px;
+	position: relative;
+	margin: 0 auto;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.column-wrap {
+	font-size: 0;
+}
+
+.column {
+	display: inline-block;
+	width: 50%;
+	font-size: 16px;
+	vertical-align: top;
+}
+
+.column--left {
+	width: 51.3%;
+	text-align: right;
+}
+.column--right {
+	width: 48.7%;
+	padding-left: 104px;
+	position: relative;
+}
+
+/* img {
+	max-width: 100%;
+	display: block;
+}
+
+.hidden {
+	display: none;
+} */
+
+
+/*-- header
+============================*/
+
+/***
+*
+* LOGO
+*
+***/
+.logo-link {
+	color: #303030;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+}
+/***
+*
+* ./LOGO
+*
+***/
+
+/***
+*
+* HEADER NAVIGATION
+*
+***/
+.nav {
+	display: inline-block;
+}	
+
+.column--header-right {
+	text-align: right;
+}
+
+.nav__item {
+	display: inline-block;
+	padding-left: 51px;
+}
+
+.nav__link {
+	color: #303030;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.125rem;
+	position: relative;
+	display: block;
+	padding: 7px 0;
+}
+
+.nav__link::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 0;
+	background: #e10011;
+	transition: width .3s ease-in-out;
+}
+
+.nav__link:hover:before {
+	width: 100%;
+}
+
+
+
+.nav__item:first-child {
+	padding-left: 0;
+}
+
+.nav__item:last-child {
+	padding-left: 38px;
+}
+/***
+*
+* ./HEADER NAVIGATION
+*
+***/
+
+/*--slider
+============================*/
+
+/***
+*
+* SLIDER
+*
+***/
+.slider-desc {
+	width: 615px;
+	text-align: right;
+}
+
+.slider-desc__title {
+	word-wrap: break-word;
+	width: 615px;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	color: #303030;
+	font-weight: 900;
+	font-size: 9.375rem;
+	line-height: 9.375rem;
+	text-transform: uppercase; 
+}
+
+.slider-desc-text {
+	margin: 0;
+	padding: 43px 0 25px 0; 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #303030;
+	font-size: 1.5rem;
+	line-height: 1.875rem;
+}
+
+.slider-decs__link {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #e10011;
+	font-size: 1.5rem;
+}
+
+.slider-img-wrap {
+	width: 366px;
+	height: 491px;
+	background: url('../img/headphones.png') center center no-repeat;
+	background-size: cover;
+}
+
+
+/***
+*
+* ./SLIDER
+*
+***/
+
+/*-- maincontent
+============================*/
+
+.container--first-section {
+	padding: 100px 0 185px 0;
+}
+
+.container--products-section {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding-top: 110px;
+	padding-bottom: 72px;
+	
+}
+
+.title-wrap {
+	text-align: center;
+}
+
+.products-section__title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	color: #303030;
+	font-size: 3rem;
+	margin: 0;
+	padding-bottom: 12px;
+}
+
+.products-section__subtitle {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	color: #303030;
+	max-width: 555px;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+
+.title-wrap {
+	padding-bottom: 70px; 
+}
+
+
+/*-- products-gallery
+============================*/
+
+.img_products-section__title {
+	display: inline-block;
+	width: 213px;
+	height: 17px;
+	background: url('../img/underline.png') center center no-repeat;
+	background-size: cover;
+}
+
+		.products--images-wrap {
+			width: 1057px;
+			height: 809px;
+			position: relative;
+			margin: 0 auto;
+		}
+
+		.text-decor {
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.875rem;
+			font-weight: 900;
+			color: #ffffff;
+			width: 226px;
+			display: block;
+			margin: 0;
+			position: absolute;
+			left: 35px;
+			top: -100px;
+			transition: all .7s ease-in-out;
+			
+		}
+
+/*-- images-gallery
+============================*/
+
+		.speaker {
+			width: 692px;
+			height: 387px;
+			background: url('../img/speaker-pill-white-standard-thrqrtleft.jpg')center center no-repeat;
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+		}
+						/*-- images-effects
+						============================*/
+
+					.speaker::before {
+						display: block;
+						content: '';
+						background: url('../img/hover-big.jpg') center center no-repeat;
+						width: 692px;
+						height: 387px;
+						position: absolute;
+						top: 0;
+						right: 692px;
+						transition: all .5s ease-in-out;
+					}
+
+					.speaker:hover:before {
+						right: 0;
+						opacity: 0.9;
+					}
+
+					.speaker:hover .speaker-decor {
+						top: 261px;
+					}
+
+/*-- images-gallery
+============================*/
+
+		.headphone {
+			width: 328px;
+			height: 387px;
+			background: url('../img/beats-by-dre-studio-red-highdefinition-headphones.jpg') center center no-repeat;
+			position: absolute;
+			top: 0;
+			right: 0;
+			overflow: hidden;
+		}
+						/*-- images-effects
+						============================*/
+
+						.headphone::before {
+							display: block;
+							content: '';
+							background: url('../img/hover.jpg') center center no-repeat;
+							width: 328px;
+							height: 387px;
+							position: absolute;
+							top: 0;
+							right: 328px;
+							transition: all .5s ease-in-out;
+						}
+
+						.headphone:hover:before {
+							right: 0;
+							opacity: 0.9;
+						}
+
+						.headphone:hover .headphone-decor {
+							top: 261px;
+						}
+
+/*-- images-gallery
+============================*/
+
+		.chair {
+			width: 328px;
+			height: 387px;
+			background: url('../img/tumblr_nko8p7po0T1qddxjwo.jpg') center center no-repeat;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			overflow: hidden;
+		}
+						/*-- images-effects
+						============================*/
+
+						.chair::before {
+							display: block;
+							content: '';
+							background: url('../img/hover.jpg') center center no-repeat;
+							width: 328px;
+							height: 387px;
+							position: absolute;
+							bottom: 0;
+							right: 328px;
+							transition: all .5s ease-in-out;
+						}
+
+						.chair:hover:before {
+							right: 0;
+							opacity: 0.9;
+						}
+
+						.chair:hover .chair-decor {
+							top: 261px;
+						}
+
+/*-- images-gallery
+============================*/
+		.choes {
+			width:328px;
+			height:387px;
+			background: url('../img/Casual-Shoes-For-Men-2.jpg') center center no-repeat;
+			position: absolute;
+			bottom: 0;
+			right: 365px;
+			overflow: hidden;
+		}
+						/*-- images-effects
+						============================*/
+
+						.choes::before {
+							display: block;
+							content: '';
+							background: url('../img/hover.jpg') center center no-repeat;
+							width: 328px;
+							height: 387px;
+							position: absolute;
+							bottom: 0;
+							right: 328px;
+							transition: all .5s ease-in-out;
+						}
+
+						.choes:hover:before {
+							right: 0;
+							opacity: 0.9;
+						}
+
+						.choes:hover .choes-decor {
+							top: 261px;
+						}
+
+/*-- images-gallery
+============================*/
+		.fitbracelet {
+			width:328px;
+			height:387px;
+			background: url('../img/fitbracelet.jpg') center center no-repeat;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+		}
+						/*-- images-effects
+						============================*/
+
+						.fitbracelet::before {
+							display: block;
+							content: '';
+							background: url('../img/hover.jpg') center center no-repeat;
+							width: 328px;
+							height: 387px;
+							position: absolute;
+							bottom: 0;
+							right:328px;
+							transition: all .5s ease-in-out;
+						}
+
+						.fitbracelet:hover:before {
+							right: 0;
+							opacity: 0.9;
+						}
+
+						.fitbracelet:hover .fitbracelet-decor {
+							top: 261px;
+						}
+
+/*-- news
+============================*/
+
+.container-news {
+	width: 703px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.news-title {
+	padding: 90px 0 0;
+	text-transform: uppercase;
+}
+
+/***
+*
+* FORM MAIL
+*
+***/
+
+.form {
+	font-size: 0;
+	width: 703px;
+	padding-top: 35px;
+}
+
+		.input-form,
+		.btn-form,
+		.social__item {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 16px;
+		}
+
+		.input {
+			background-image: url('../img/mail-icon.png');   
+			background-repeat: no-repeat; /*Убираем повтор изображения*/   
+			background-position: 35px; /*Позиционируем*/  
+			vertical-align:  middle;
+			border: none; /*убираем стандартную обводку браузера*/   
+			width:495px;
+			padding-left: 65px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+			height: 70px; /*высота строки ввода*/  
+			border-radius: 50px 0 0 50px;
+		}
+
+		.input-form {
+			width: 495px;
+		}
+
+		/***
+		*
+		* FORM-BTN
+		*
+		***/
+
+		.input-btn {
+			width: 208px;
+			height:70px;
+			background: url('../img/btn.png') center center no-repeat;
+			border: none;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 1.125rem;
+			color: #ffffff;
+			cursor: pointer;
+		}
+		.btn-form {
+			position: relative;
+		} 
+
+		i {
+			position: absolute;
+			top: 27px;
+			right: 40px;
+			color: #ffffff;
+		}
+		
+		.btn-form {
+			width: 208px;
+		}
+
+		/***
+		*
+		* FORM-BTN
+		*
+		***/
+
+/***
+*
+* /.FORM MAIL
+*
+***/
+
+/***
+*
+* SOCIAL
+*
+***/
+
+.social-wrap {
+	margin: 0 auto;
+	width:341px;
+}
+
+		.social__item {
+			padding-left: 20px;
+			font-size: 16px;
+			
+		}
+
+		.social__item:first-child {
+			padding-left: 0;
+		}
+
+		.social__list {
+			padding: 0;
+			font-size: 0;
+		}
+
+		.social {
+			padding: 111px 0 63px 0;
+		}
+
+		.social-icon {
+			transition: transform .2s ease-in-out;
+		}
+
+		.social-icon:hover {
+			transform: scale(1.2);
+		}
+
+/***
+*
+* /.SOCIAL
+*
+***/
+
+/*-- footer
+============================*/
+
+.footer {
+	text-align: center;
+}
+
+		.copy {
+			font-family: 'Raleway', sans-serif; 
+			font-weight: 400;
+			font-size: 1.125rem;
+			color: #979797;
+			padding-bottom: 23px;
+		}
+
+		.copy>span {
+			color: #303030;
+		}
+
+		
+
+		
