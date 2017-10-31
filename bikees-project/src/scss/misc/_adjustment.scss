@@ -52,6 +52,7 @@ a {
         .fa-search {
             font-size: 48px;
             color: #ffffff;
+            cursor: pointer;
         }
 
 
@@ -79,7 +80,7 @@ a {
             border-radius: 10px;
             z-index: 99;
             opacity: 0;
-            transition: opacity .5s ease-in
+            transition: opacity .3s ease-in
         }
 
             .search__wrap {
@@ -92,6 +93,7 @@ a {
             .input-wrap {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
             .input-wrap:not(last-child) {
                 margin-bottom: 40px;
@@ -103,6 +105,9 @@ a {
                 font-weight: 300;
             }
 
+            .search-label:hover {
+                text-decoration: underline;
+            }
             .search-input {
                 border: none;
                 background: none;
@@ -115,7 +120,7 @@ a {
             position: absolute;
             width: 100%;
             height: 100vh;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.5);
             top: 0;
             left: 0;
             z-index: 98;
@@ -128,6 +133,7 @@ a {
             color: #8538c4;
             position: relative;
             z-index: 99;
+            cursor: pointer;
         }
 
         .search-open,
@@ -149,6 +155,9 @@ a {
              display: none;
          }
         
+         .search-input:focus {
+         bacground:rgba(255, 255, 255, 0.7);
+         }
         
 
 /***
@@ -335,8 +344,8 @@ a {
     }
         
         .nav-footer {
-            width: 56%;
-            padding: 60px 65px; 
+            width: 60%;
+            padding: 60px 45px; 
             border-right: 1px solid #4d5362;
         }
 
@@ -350,7 +359,7 @@ a {
             }
 
             .nav__list-items {
-                margin: 7.5px 0;
+                margin: 7.5px 10px;
             } 
            /*  .nav__list-items:last-child {
                 margin-right: 0;
@@ -358,9 +367,16 @@ a {
 
             .nav__link {
                 text-transform: uppercase;
-                font-size: 1.03rem;
+                font-size: 1rem;
                 font-weight: 300;
                 color: #c3c3c3;
+                transition: color .2s ease-in-out;
+                display:  block;
+                padding: 3px;
+            }
+
+            .nav__link:hover {
+                color: #ffffff;
             }
 
         .contacts {
@@ -438,3 +454,7 @@ a {
                     color: #666;
                     opacity: 1;
                 }          
+
+                .footer-mail:focus {
+                    background: rgba(255, 255, 255, 0.3);
+                }
