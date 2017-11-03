@@ -26,43 +26,50 @@
             <div class="logo">
                <a href="#" class="logo__link">Bikees.</a>
             </div>
+            <!-- search button -->
             <div class="header-search">
                 <input class="search-open" type="radio" name="search" id="search">
                 <label class="search-open__btn" for="search"><i class="fa fa-search" aria-hidden="true"></i></label>
                 <input class="search-close" type="radio" name="search" id="search-close" checked>
                 <label class="search-close__btn" for="search-close"><i class="fa fa-times" aria-hidden="true"></i></label>
+            <!-- ./search button -->
+
+            <!-- search modal window -->
                 <div class="search__window">
 
                     <div class="search__wrap">
                         <div class="input-wrap model">
-                            <label class="search-label" for="model">Model bike</label>
-                            <input class="search-input" type="text" name="model" id="model">
+                            <label class="search-label label-model" for="model">Model bike</label>
+                            <input class="search-input input-model" type="text" name="model" id="model">
                         </div>
     
                         <div class=" input-wrap release">
-                            <label class="search-label" for="release">Release</label>
-                            <input class="search-input" type="release" name="release" id="release">
+                            <label class="search-label label-release" for="release">Release</label>
+                            <input class="search-input input-release" type="release" name="release" id="release">
                         </div>
     
-                        <div class=" input-wrap sex">
-                            <label class="search-label" for="man">For man</label>
-                            <input class="search-input" type="checkbox" name="man" id="men">
-
-                            <label class="search-label" for="woman">For woman</label>
-                            <input class="search-input" type="checkbox" name="woman" id="woman">
-
+                        <div class=" input-wrap male">
+                            <label class="search-label label-male" for="man">For man</label>
+                            <input class="search-input input-male" type="checkbox" name="man" id="men">
+                        </div>
+                        <div class="input-wrap female">
+                            <label class="search-label label-female" for="woman">For woman</label>
+                            <input class="search-input input-female" type="checkbox" name="woman" id="woman">
                         </div>
                     </div>
+                    
                 </div>
                 <div class="search__owerlay"></div>
+                <!-- ./search modal window -->
+
             </div>
             
         </div>
     </header>
-    <!-- /.mainheader -->
+    <!-- /.header -->
 
 
-    <!-- /.main-content -->
+    <!-- main-content -->
 
     <div class="main-content">
         
@@ -75,6 +82,7 @@
             </div>
         </div>
 
+       
         <div class="column-right column-right--bacground">
                 <div class="desc-wrap">
                     <h1 class="desc-title">Cruisers</h1>
@@ -83,10 +91,12 @@
                 </div>
         </div>
     </div>
+
     <!-- /.main-content -->
 
 
     <!-- footer -->
+
     <footer class="main-footer">
 
         <div class="footer-wrap">
@@ -104,7 +114,12 @@
                 <div class="copy">&copy;Bikees.2015</div>
             </div>
 
+            <!-- column right -->
+
             <div class="column-right column-right--footer">
+
+                <!-- footer navigation -->
+
                 <div class="nav-footer">
                     <ul class="nav__list">
                         <li class="nav__list-items"><a href="#" class="nav__link">fixies</a></li>
@@ -115,6 +130,9 @@
                         <li class="nav__list-items"><a href="#" class="nav__link">contact</a></li>
                     </ul>
                 </div>
+                <!-- ./footer navigation -->
+
+                <!-- footer contacts -->
 
                 <div class="contacts">
                     <h2 class="contacts-title">
@@ -133,11 +151,16 @@
                         </li>
                     </ul>
                 </div>
+                <!-- ./footer contacts -->
+
             </div>
+
+            <!-- ./column right -->
 
         </div>
 
     </footer>
+    
     <!-- /.footer -->
 </body>
 </html>

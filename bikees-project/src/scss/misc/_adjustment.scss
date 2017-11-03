@@ -18,6 +18,7 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
 .main-content {
     flex-grow: 1;
 }
@@ -43,9 +44,8 @@ a {
     } 
     
         .logo__link {
-            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
-            font-size: 2,9rem;
+            font-size: 2.9rem;
             color: #ffffff;
         }
 
@@ -64,8 +64,6 @@ a {
 
         .search__window {
             position: absolute;
-            width: 500px;
-            height: 300px;
             top: 100px;
             left: 50%;
             transform: translateX(-50%);
@@ -80,6 +78,7 @@ a {
             border-radius: 10px;
             z-index: 99;
             opacity: 0;
+            padding: 60px 50px;
             transition: opacity .3s ease-in
         }
 
@@ -87,15 +86,14 @@ a {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-                padding: 60px 50px;
+                
             }
 
             .input-wrap {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include flexcontSpace;
+               
             }
-            .input-wrap:not(last-child) {
+            .input-wrap:not(:last-child) {
                 margin-bottom: 40px;
             }
             .search-label {
@@ -103,6 +101,7 @@ a {
                 font-size: 1rem;
                 color: #ffffff;
                 font-weight: 300;
+                margin-right: 25px;
             }
 
             .search-label:hover {
@@ -115,6 +114,8 @@ a {
                 border-radius: 5px;
                 height: 30px;
             }
+
+           
 
         .search__owerlay {
             position: absolute;
@@ -156,7 +157,7 @@ a {
          }
         
          .search-input:focus {
-         bacground:rgba(255, 255, 255, 0.7);
+            background:rgba(255, 255, 255, 0.7);
          }
         
 
@@ -177,14 +178,14 @@ a {
         text-transform: uppercase;
         padding: 0;
         margin: 0 0 25px 0;
-        font-weight: 600;
+        font-weight: 500;
        color: #ffffff;
-       font-size: 5,42rem; 
+       font-size: 4.4rem; 
     }
     
     .desc-subtitle {
         font-family: 'Montserrat', sans-serif; 
-        font-size: 2,94rem;
+        font-size: 2.94rem;
         padding: 0;
         margin: 0 0 65px 0;
         color: #ffffff;
@@ -292,13 +293,13 @@ a {
                 margin: 0 0 25px 0; 
             }
                 .footer-logo__link {
-                    font-size: 1.68rem;
+                    font-size: 1.65rem;
                     color: #ffffff;
                     padding: 0;
                 }
     
             .left-column__title {
-                font-size: 1.03rem;
+                font-size: 1rem;
                 text-transform: uppercase;
                 font-weight: 500;
                 color: #b3b4b6;
@@ -308,18 +309,19 @@ a {
             }
 
             .left-column__subtitle {
-                font-size: 1.03rem;
+                font-size: 1rem;
                 font-weight: 300;
                 color: #b3b4b6;
                 padding: 0 0 2px 0;
                 margin: 0 0 45px 0;
+                width: 320px;
                 position: relative;
             }
 
                 .left-column__subtitle::before {
                     content: '';
                     position: absolute;
-                    width: 330px;
+                    width: 100%;
                     height: 1px;
                     background: #90929a;
                     left: 0;
@@ -360,11 +362,10 @@ a {
 
             .nav__list-items {
                 margin: 7.5px 10px;
+                width: 110px;
+                text-align: left;
             } 
-           /*  .nav__list-items:last-child {
-                margin-right: 0;
-            } */
-
+          
             .nav__link {
                 text-transform: uppercase;
                 font-size: 1rem;
@@ -381,8 +382,6 @@ a {
 
         .contacts {
             padding: 25px 0 45px 40px;
-            
-            
         }    
 
             .contacts-title {
@@ -433,7 +432,7 @@ a {
                 color: #e4e6ee;
             }
             
-            /* input settings
+            /* input settings placeholder
             ==================== */
             
                 .footer-mail::-webkit-input-placeholder {
@@ -442,17 +441,23 @@ a {
                     font-weight: 300;
                     color: rgba(255, 255, 255, 0.5);
                 }
-                *:-moz-placeholder {
-                    color: #666;
-                    opacity: 1;
+                .footer-mail:-moz-placeholder {
+                    font-family: 'Montserrat', sans-serif; 
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.5);
                 }
-                *::-moz-placeholder {
-                    color: #666;
-                    opacity: 1;
+                .footer-mail::-moz-placeholder {
+                    font-family: 'Montserrat', sans-serif; 
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.5);
                 }
-                *:-ms-input-placeholder {
-                    color: #666;
-                    opacity: 1;
+                .footer-mail:-ms-input-placeholder {
+                    font-family: 'Montserrat', sans-serif; 
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.5);
                 }          
 
                 .footer-mail:focus {

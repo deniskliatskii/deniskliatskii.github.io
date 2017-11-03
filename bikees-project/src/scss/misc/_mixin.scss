@@ -16,10 +16,16 @@
     width: auto;
 }
 
-@mixin size ($font) {
+@mixin sizePx ($font) {
     font-size: $font;
     line-height: $font+2px;
 }
+
+/* @mixin size ($font) {
+    $rem: $font/16;
+    font-size: $rem;
+    line-height: $rem + 0.125;
+} */
 
 @mixin flexCenter {
     justify-content: center;
