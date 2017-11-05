@@ -1,0 +1,39 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header-container {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 0;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav__item {
+        margin-right: 60px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .nav__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, .75);
+        font-weight: 700;
+        font-size: 0.8125rem;
+    }

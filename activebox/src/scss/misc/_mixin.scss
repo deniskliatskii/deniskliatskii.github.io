@@ -1,0 +1,42 @@
+@mixin container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media screen and (max-width:1210px) {
+    width: 970px;
+}
+
+@media screen and (max-width:992px) {
+    width: 750px;
+}
+
+@media screen and (max-width:768px) {
+    width: auto;
+}
+
+@mixin size ($font) {
+    font-size: $font;
+    line-height: $font+2px;
+}
+
+@mixin flexCenter {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@mixin flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin descrText {
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.31rem;
+    padding: 0;
+    margin: 0;
+    color: #6c7279;
+}

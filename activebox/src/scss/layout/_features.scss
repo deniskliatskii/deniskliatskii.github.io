@@ -1,0 +1,32 @@
+.features {
+    @include container;
+    padding: 120px 48px;
+}
+
+.features-list {
+    @include flexSpaceBetween;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin: 0 -15px;
+}
+
+.features-list__item {
+    text-align: center;
+    width: 300px;
+    margin: 15px;
+}
+
+.features-title {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #2d3033;
+    text-transform: uppercase;
+}
+
+.features-descr {
+    @include descrText;
+    padding: 0;
+    margin: 0;
+}

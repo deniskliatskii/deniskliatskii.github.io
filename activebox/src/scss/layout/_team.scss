@@ -1,0 +1,40 @@
+.team {
+    @include container;
+    padding-bottom: 100px;
+}
+
+    .team-cards__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @include flexSpaceBetween;
+    }
+    .team-cards__name {
+        font-weight: regular;
+        font-size: 1.375rem;
+        color: #2d3033;
+        padding: 0;
+        margin: 25px 0 10px 0;
+    }
+
+    .team-cards__profesional {
+        font-weight: regular;
+        font-size: 0.81rem;
+        color: #e84545;
+        padding: 0;
+        margin: 0 0 25px 0;
+        text-transform: uppercase;
+    }
+
+    .team-cards__descr {
+        @include descrText;
+        max-width: 270px;
+        margin-bottom: 25px;
+    }
+    .team-social__list {
+        justify-content: flex-start;
+    }
+    
+    .team-social__link {
+        color: #c6cacc;
+    }
