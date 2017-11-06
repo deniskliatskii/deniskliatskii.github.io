@@ -9,4 +9,8 @@
     font-weight: 600;
     padding: 16px 50px;
     border-radius: 2px;
+    transition: bacground .2s ease-in-out;
   }
+    .page-btn:hover {
+      background: $page-btn-bg-hover;
+    }
