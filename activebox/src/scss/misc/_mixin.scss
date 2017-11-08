@@ -21,16 +21,25 @@
     line-height: $font+2px;
 }
 
+/*** FLEX CONTAINER CENTER
+=============================***/
+
 @mixin flexCenter {
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
+/*** FLEX CONTAINER SPACE BETWEEN
+=============================***/
+
 @mixin flexSpaceBetween {
     display: flex;
     justify-content: space-between;
 }
+
+/*** DEFOLT TEXT
+=============================***/
 
 @mixin descrText {
     font-weight: normal;
